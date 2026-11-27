@@ -1,9 +1,9 @@
 
 // Capstone Project - Part C
-// Student K = 96
-// Box starts at row 96 (16384 + 96*32 = 19456)
+// Student K = 31
+// Box starts at row 31 (16384 + 31*32 = 17375)
 // Height = 20 rows
-// Width = 16 x ((96 mod 4) + 1) = 16 pixels (one screen word)
+// Width = 16 x ((31 mod 4) + 1) = 16 pixels (one screen word)
 
 // Continuously check keyboard
 (START)
@@ -17,7 +17,7 @@
 
 // Draw black box
 (DRAW_SETUP)
-    @19456
+    @17375
     D=A
     @address
     M=D
@@ -49,7 +49,7 @@
 
 // Clear box when key is released
 (CLEAR_SETUP)
-    @19456
+    @17375
     D=A
     @address
     M=D
